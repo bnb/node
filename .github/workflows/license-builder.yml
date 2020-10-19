@@ -1,11 +1,10 @@
-name: Nightly update
+name: license update
 on:
   schedule:
     # 00:00:00 every Monday
     # https://crontab.guru/#0_0_*_*_1
     - cron: "0 0 * * 1"
   workflow_dispatch:
-  
 
 jobs:
   update_routes:
