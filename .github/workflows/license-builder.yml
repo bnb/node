@@ -1,0 +1,18 @@
+name: Nightly update
+on:
+  schedule:
+    # 00:00:00 every Monday
+    # https://crontab.guru/#0_0_*_*_1
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+  
+
+jobs:
+  update_routes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: "./tools/license-builder.sh" # run the license builder tool
+      - uses: gr2m/create-or-update-pull-request-action@v1.x # create a PR or update the Action's existing PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
