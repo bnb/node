@@ -2,8 +2,8 @@ name: "authors update"
 on:
   schedule:
     # 00:00:00 on the first day of every month
-    # https://crontab.guru/#0_0_1_1-12_*
-    - cron: "0 0 * 1-12 *"
+    # https://crontab.guru/#0_0_1_*_*
+    - cron: "0 0 1 * *"
   workflow_dispatch:
 
 jobs:
