@@ -17,7 +17,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           title: "doc: update AUTHORS"
-          body: "If this PR exists, there's presumably new additions to the AUTHORS file. This is an automatically generated PR by the `authors.yml` GitHub Action, which runs `tools/update-authors.js` and submits a new PR or updates an existing PR.\n\nPlease note, prior to merging please ensure there are no duplicate entries. If there are, please commit updates to `.mailmap` directly to this PR."
+          body: "If this PR exists, there's presumably new additions to the AUTHORS file. This is an automatically generated PR by the `authors.yml` GitHub Action, which runs `tools/update-authors.js` and submits a new PR or updates an existing PR.\n\nPlease note that there might be duplicate entries. If there are, please remove them and add the duplicate emails to .mailmap directly to this PR."
           branch: "actions/authors-update"
           commit-message: "doc: update AUTHORS"
           labels: meta
