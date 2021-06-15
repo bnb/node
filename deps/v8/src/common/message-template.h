@@ -36,7 +36,7 @@ namespace internal {
     "ArrayBuffer subclass returned this from species constructor")             \
   T(AwaitNotInAsyncContext,                                                    \
     "await is only valid in async functions and the top level bodies of "      \
-    "modules")                                                                 \
+    "ECMAScript modules")                                                      \
   T(AwaitNotInAsyncFunction, "await is only valid in async function")          \
   T(AtomicsWaitNotAllowed, "Atomics.wait cannot be called in this context")    \
   T(BadSortComparisonFunction,                                                 \
@@ -95,8 +95,8 @@ namespace internal {
     "Immutable prototype object '%' cannot have their prototype set")          \
   T(ImportAssertionDuplicateKey, "Import assertion has duplicate key '%'")     \
   T(ImportCallNotNewExpression, "Cannot use new with import")                  \
-  T(ImportOutsideModule, "Cannot use import statement outside a module")       \
-  T(ImportMetaOutsideModule, "Cannot use 'import.meta' outside a module")      \
+  T(ImportOutsideModule, "Cannot use import statement outside an ECMAScript module")       \
+  T(ImportMetaOutsideModule, "Cannot use 'import.meta' outside an ECMAScript module")      \
   T(ImportMissingSpecifier, "import() requires a specifier")                   \
   T(IncompatibleMethodReceiver, "Method % called on incompatible receiver %")  \
   T(InstanceofNonobjectProto,                                                  \
@@ -458,7 +458,7 @@ namespace internal {
   T(MalformedRegExpFlags, "Invalid regular expression flags")                  \
   T(ModuleExportUndefined, "Export '%' is not defined in module")              \
   T(MissingFunctionName, "Function statements require a function name")        \
-  T(HtmlCommentInModule, "HTML comments are not allowed in modules")           \
+  T(HtmlCommentInModule, "HTML comments are not allowed in ECMAScript modules")\
   T(MultipleDefaultsInSwitch,                                                  \
     "More than one default clause in switch statement")                        \
   T(NewlineAfterThrow, "Illegal newline after throw")                          \
@@ -540,7 +540,7 @@ namespace internal {
     "Lexical declaration cannot appear in a single-statement context")         \
   T(UnknownLabel, "Undefined label '%'")                                       \
   T(UnresolvableExport,                                                        \
-    "The requested module '%' does not provide an export named '%'")           \
+    "The requested ECMAScript module '%' does not provide an export named '%'")\
   T(UnterminatedArgList, "missing ) after argument list")                      \
   T(UnterminatedRegExp, "Invalid regular expression: missing /")               \
   T(UnterminatedTemplate, "Unterminated template literal")                     \
