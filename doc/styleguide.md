@@ -43,8 +43,11 @@ For API references, there are exceptions to this rule.
 
 ## Markdown rules
 
-This repository uses the [`remark-preset-lint-node`][remark-preset-lint-node] package to enforce consistent
-Markdown styling. For the exact rules, see [nodejs/remark-preset-lint-node][nodejs/remark-preset-lint-node]. Additionally, we're beginning to use [docs-parser][docs-parser] to parse the Markdown into an API.
+This repository uses the [`remark-preset-lint-node`][remark-preset-lint-node]
+package to enforce consistent Markdown styling. For the exact rules, see
+[nodejs/remark-preset-lint-node][nodejs/remark-preset-lint-node]. Additionally,
+we're beginning to use [docs-parser][docs-parser] to parse the Markdown
+into an API.
 
 There are a few style guidelines that aren't covered by the linter rules:
 
@@ -111,9 +114,9 @@ Using `fs` as an example:
   must be listed under an `### Instance Methods` chapter.
 * All methods that have a return value must start their description with
   "Returns `[TYPE]` - [Return description]"
-  * If the method returns an `Object`, its structure can be specified using a colon
-    followed by a newline then an unordered list of properties in the same style as
-    function parameters.
+  * If the method returns an `Object`, its structure can be specified
+    using a colon followed by a newline then an unordered list of properties in
+    the same style as function parameters.
 * Instance Events must be listed under an `### Instance Events` chapter.
 * Instance Properties must be listed under an `### Instance Properties` chapter.
   * Instance Properties must start with "A [Property Type] ..."
@@ -167,8 +170,8 @@ name of the instance of the class, and must not be the same as the module's
 name.
 
 Optional arguments are notated by square brackets `[]` surrounding the optional
-argument as well as the comma required if this optional argument follows another
-argument:
+argument as well as the comma required if this optional argument follows
+another argument:
 
 ```markdown
 required[, optional]
@@ -177,8 +180,9 @@ required[, optional]
 #### Argument descriptions
 
 More detailed information on each of the arguments is noted in an unordered list
-below the method. The type of argument is notated by either JavaScript primitives
-(e.g. `string`, `Promise`, or `Object`), a custom API structure, or the wildcard `any`.
+below the method. The type of argument is notated by either JavaScript
+primitives (e.g. `string`, `Promise`, or `Object`), a custom API structure,
+or the wildcard `any`.
 
 If the argument is of type `Array`, use `[]` shorthand with the type of value
 inside the array (for example,`any[]` or `string[]`).
@@ -237,8 +241,8 @@ belongs to a module or a class.
 
 See [nodejs/i18n](https://github.com/nodejs/i18n#readme)
 
-[title-case]: https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-[sentence-case]: https://apastyle.apa.org/style-grammar-guidelines/capitalization/sentence-case
-[remark-preset-lint-node]: https://www.npmjs.com/package/remark-preset-lint-node
-[nodejs/remark-preset-lint-node]: https://github.com/nodejs/remark-preset-lint-node
 [docs-parser]: https://github.com/electron/docs-parser
+[nodejs/remark-preset-lint-node]: https://github.com/nodejs/remark-preset-lint-node
+[remark-preset-lint-node]: https://www.npmjs.com/package/remark-preset-lint-node
+[sentence-case]: https://apastyle.apa.org/style-grammar-guidelines/capitalization/sentence-case
+[title-case]: https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
