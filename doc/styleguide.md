@@ -124,7 +124,7 @@ Using `fs` as an example:
 Using the `v8` classes as an example of some of the outlined structure:
 
 ```markdown
-# v8
+# `v8`
 
 ## Methods
 
