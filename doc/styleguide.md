@@ -14,7 +14,7 @@ These are the guidelines for writing Node.js documentation.
 Using a hypothetical `Quick Start` as an example:
 
 ```markdown
-# How to write a test for the Node.js project
+# How to Write a Test for the Node.js Project
 
 ...
 
