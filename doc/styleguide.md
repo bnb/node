@@ -75,7 +75,7 @@ as its title (such as `path`, `fs`, and `querystring`).
 Directly under the page title, add a one-line description of the module
 as a markdown quote (beginning with `>`).
 
-Using the `session` module as an example:
+Using the `querystring` module as an example:
 
 ```markdown
 # querystring
